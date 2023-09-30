@@ -21,7 +21,22 @@
     - 前回のプル~プッシュの間に他の人が変更を加えた場合, これをしないとプッシュができないらしい
   
 ## 利用手順 (CLI)
-- $ git clone *.git
+- $ git clone *.git 
+- git branch
+    - display all branch
+- git branch BRANCH_NAME
+    - make branch. with -b, checkout it at the time. with -d, delete branch.
+- git checkout BRANCH_NAME
+    - checkout branch
+- git add FILE_NAME
+    - add stage area edited file. Replacing FILE_NAME with -u, all new changes are added.
+    - the files can be confirmed using $ git status
+    - to cancel staging, $ git reset FILE_NAME
+- git commit
+    - -m "COMMENT"
+- git merge BRANCH_NAME
+    - merge target branch into current branch
+- $ git push origin main
 
 ## 利用手順 (GUI)
 - 変更をリモートに反映させるためにはプッシュ権限が必要なのでアカウント名を教えてください(クローンとかはできるはず)
